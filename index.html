@@ -12,45 +12,44 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
-<body>
+<body onload="init()">
     <section class="fondo">
         <div class="fondo-fondocalculadora">
             <h1 class="fondo-fondocalculadora-titulo">Calculadora</h1>
-            <input type="text" class="fondo-fondocalculadora-input" name="Name"/>
+            <span id="resultado" class="fondo-fondocalculadora-span"></span>
+            <!-- <input type="text" id="resultado" class="fondo-fondocalculadora-input" name="Name"/> -->
             <div class="fondo-fondocalculadora-bt">
                 <div class="fondo-fondocalculadora-bt-botones">
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">0</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">C</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">÷</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">--</button>
+                    <button id="cero" class="fondo-fondocalculadora-bt-botones-fila1">0</button>
+                    <button id="c" class="fondo-fondocalculadora-bt-botones-fila11">C</button>
+                    <button id="dividir" class="fondo-fondocalculadora-bt-botones-fila11">÷</button>
+                    <button id="borrartodo" class="fondo-fondocalculadora-bt-botones-fila11">--</button>
                 </div>
                 <div class="fondo-fondocalculadora-bt-botones">
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">7</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">8</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">9</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">X</button>
+                    <button id="siete" class="fondo-fondocalculadora-bt-botones-fila1">7</button>
+                    <button id="ocho" class="fondo-fondocalculadora-bt-botones-fila1">8</button>
+                    <button id="nueve" class="fondo-fondocalculadora-bt-botones-fila1">9</button>
+                    <button id="multiplicar" class="fondo-fondocalculadora-bt-botones-fila11">X</button>
                 </div>
                 <div class="fondo-fondocalculadora-bt-botones">
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">4</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">5</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">6</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">-</button>
+                    <button id="cuatro" class="fondo-fondocalculadora-bt-botones-fila1">4</button>
+                    <button id="cinco" class="fondo-fondocalculadora-bt-botones-fila1">5</button>
+                    <button id="seis" class="fondo-fondocalculadora-bt-botones-fila1">6</button>
+                    <button id="restar" class="fondo-fondocalculadora-bt-botones-fila11">-</button>
                 </div>
                 <div class="fondo-fondocalculadora-bt-botones">
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">1</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">2</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">3</button>
-                    <button class="fondo-fondocalculadora-bt-botones-fila1">+</button>
+                    <button id="uno" class="fondo-fondocalculadora-bt-botones-fila1">1</button>
+                    <button id="dos" class="fondo-fondocalculadora-bt-botones-fila1">2</button>
+                    <button id="tres" class="fondo-fondocalculadora-bt-botones-fila1">3</button>
+                    <button id="sumar" class="fondo-fondocalculadora-bt-botones-fila11">+</button>
                 </div>
             </div>
-
-            
+            <!-- boton igual -->
             <div class="fondo-fondocalculadora-boton">
-                <button class="fondo-fondocalculadora-boton-igual">=</button>
+                <button id="result" class="fondo-fondocalculadora-boton-igual">=</button>
             </div>
-
         </div>
-        
     </section>
+    <script src="/js/funcionalidad.js"></script>
 </body>
 </html>

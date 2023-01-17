@@ -23,16 +23,22 @@ body {
 }
 .fondo-fondocalculadora-titulo {
   color: azure;
+  font-size: 33px;
   border-bottom: 2px solid #599CB2;
   width: 100%;
   height: 10%;
   text-align: center;
 }
-.fondo-fondocalculadora-input {
+.fondo-fondocalculadora-span {
+  background: #F0F0F0;
   width: 275px;
   height: 15%;
   border-radius: 8px;
-  border: #000;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
 }
 .fondo-fondocalculadora-bt {
   padding-top: 26px;
@@ -46,6 +52,22 @@ body {
   width: 70px;
   height: 50px;
   border-radius: 6px;
+  font-size: large;
+}
+.fondo-fondocalculadora-bt-botones-fila1:hover {
+  font-weight: bolder;
+  background-color: #97cbde;
+}
+.fondo-fondocalculadora-bt-botones-fila11 {
+  width: 70px;
+  height: 50px;
+  border-radius: 6px;
+  font-size: large;
+  background-color: #c2d5dc;
+}
+.fondo-fondocalculadora-bt-botones-fila11:hover {
+  font-weight: bolder;
+  background-color: #97cbde;
 }
 .fondo-fondocalculadora-boton {
   padding-top: 7px;
@@ -55,7 +77,11 @@ body {
   width: 120px;
   height: 50px;
   border-radius: 6px;
+  font-size: large;
+  background-color: #c2d5dc;
 }
 .fondo-fondocalculadora-boton-igual:hover {
   cursor: pointer;
+  font-weight: bolder;
+  background-color: #97cbde;
 }/*# sourceMappingURL=style.css.map */

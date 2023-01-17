@@ -18,24 +18,27 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        //justify-content: space-between;
         &-titulo{
             color: azure;
-            //background: red;
+            font-size: 33px;
             border-bottom: 2px solid #599CB2;
             width: 100%;
             height: 10%;
             text-align: center;
         }
-        &-input{
+        &-span{
+            background: #F0F0F0;
             width: 275px;
             height: 15%;
             border-radius: 8px;
-            border: #000;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: scroll;
         }
         //botones
         &-bt{
-            //background: red;
             padding-top: 26px;
             width: 282px;
             &-botones{
@@ -45,6 +48,22 @@ body{
                     width: 70px;
                     height: 50px;
                     border-radius: 6px;
+                    font-size: large;
+                }
+                 &-fila1:hover{
+                font-weight: bolder;
+                background-color: #97cbde;
+                }
+                &-fila11{
+                    width: 70px;
+                    height: 50px;
+                    border-radius: 6px;
+                    font-size: large;
+                    background-color: #c2d5dc;
+                }
+                &-fila11:hover{
+                    font-weight: bolder;
+                    background-color: #97cbde;
                 }
             }
         }
@@ -56,9 +75,13 @@ body{
                 width: 120px;
                 height: 50px;
                 border-radius: 6px;
+                font-size: large;
+            background-color: #c2d5dc;
             }
             &-igual:hover{
                 cursor: pointer;
+                font-weight: bolder;
+                background-color: #97cbde;
             }
         }
     }
